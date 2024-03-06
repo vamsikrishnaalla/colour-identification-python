@@ -13,6 +13,7 @@ for c in cnts:
     if len(approx) == 4:
         x,y,w,h = cv2.boundingRect(approx)
         cv2.rectangle(image,(x,y),(x+w,y+h),(36,255,12),2)
+        print((x,y),(x+w,y+h));
 
 cv2.imshow('thresh', thresh)
 cv2.imshow('image', image)
